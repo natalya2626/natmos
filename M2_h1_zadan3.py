@@ -18,12 +18,4 @@ METERS_IN_YARD  = 0.9144    # стандартное значение
 if choice == "1":
     result = m/METERS_IN_MILE
     print(f"Получислось миль: {result:.6f}")
-elif choice == "2":
-    result = m/METERS_IN_INCH
-    print(f"Получилось дюймов: {result:.2f}")
-elif choice  == "3":
-    result = m/METERS_IN_YARD
-    print(f"Получилось ярдов: {result:.2f}")
-
-else:
-    print("Ошибка: нужно ввести 1, 2 или 3.")
+SyntaxError: '(' was never closed
