@@ -32,7 +32,7 @@ def convert_speed():
     print(f"Скорость: {speed_ms:.2f} м/с")                     
 
 def check_battery_life():
-    charge = int(input("Текущий заряд в(%): "))     
+    charge = int(input("Текущий заряд (%): "))     
     hours_needed = int(input("Сколько часов вам нужно? ")) 
     if hours_needed <= charge / 12:
         print("Заряда хватит")
@@ -48,7 +48,7 @@ def main_menu():   #  главное меню
     print("2) Перевести скорость из км/ч в м/с ")
     print("3) Узнать, хватит ли заряда телефона до конца дня ")
 
-    choice = input ("Ваш выбор (1, 2 или 3):  ")
+    choice = input ("Ваш выбор (1, 2 или 3): ")
     # Обработка выбора
     if choice  == "1":
         calculate_room_area()        
