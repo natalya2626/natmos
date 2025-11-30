@@ -23,7 +23,7 @@ SAUCER_SPEED = 5
 class Saucer(GameObject):
     '''It is a saucer     представляет собой блюдце'''
 
-    def __init__(self, x: int, y: int, state: str, size: int, alive: bool,type_: SaucerType, game: Game, 
+    def __init__(self, x: int, y: int, state: str, size: int,type_: SaucerType, game: Game, 
                  bdir: int = 0):
         self.x = x
         self.y = y
@@ -35,8 +35,9 @@ class Saucer(GameObject):
         self.game = game
         self.size = size
         self.bdir = bdir                  # напрвление
-        self.alive = alive
-
+        self.alive = True
+        self.soundDelay = 0 
+        
         if self.x == 0:
             self.dir = 0
             self.dirchoice = (0, 45, -45)

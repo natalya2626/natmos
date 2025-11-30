@@ -26,18 +26,15 @@ class Deadplayer(GameObject):
         self.speed = random.randint(2, 8)
         self.life = 60  # живёт 60 кадров (~1 секунда при 60 FPS)
         self.game = game
-
+        self.alive = True
 
     def update(self):
         self.angle += self.rtspd
         self.x += self.speed * math.cos(self.dir)
         self.y += self.speed * math.sin(self.dir)
-        self.life -= 1
-
-
-
-
-
+        self.life -= 1        
+        if self.life <= 0:
+            self.alive = False
         
 
     def draw(self): 
