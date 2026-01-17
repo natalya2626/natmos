@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица оценок студентов</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left; /* ← ВСЕ ячейки — по левому краю */
+        }
+       
+        th {
+            background-color:  #f2f2f2;
+        }
+    </style>
+</head>
+<body>  
+    <table class="table">
+        <caption>Студенты</caption>
+            <tr>  
+                <th>Ф.И.О.</th>
+                <th>Специализация</th>
+                <th>Выбранный курс</th>
+                <th>Оценка за курс</th>
+            </tr>
+        <tbody>
+            <tr> 
+                <td>Иванова Милена Вячеславовна</td>    
+                <td>Математика</td>
+                <td>Python</td>
+                <td>Отлично</td>
+            </tr>
+            <tr>    
+                <td>Новиков Максим Андреевич</td>
+                <td>Физика</td>
+                <td>С++</td>
+                <td>Удовлетворительно</td>
+            </tr>
+            <tr>
+                <td>Сидоров Виктор Павлович</td>
+                <td>Программирование</td>
+                <td>Java</td>
+                <td>Отлично</td>
+            </tr>
+            <tr>
+                <td>Сударева Полина Викторовна</td>
+                <td>Математика</td>
+                <td>JavaScript</td>
+                <td>Хорошо</td>
+            </tr>    
+        <tbody>
+    </table> 
+</body>
+</html>

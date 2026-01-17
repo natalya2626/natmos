@@ -1,0 +1,40 @@
+:root {
+    font-size: 20px;                        /* размер шрифта*/
+    font-family: "Arial", sans-serif;    /* семейство шрифтов arial без засечек*/
+    font-optical-sizing: auto;        /* шрифт оптическое определение размеров*/
+    font-weight: normal;                    /* вес шрифта*/
+    font-style: normal;                     /* шрифт стиль*/
+    font-variation-settings: "wdth" 100;    /* шрифт вариативные настройки*/
+}
+
+body {
+    background-color: gray;              /* фон   серый */
+}
+
+h1 {
+    color: blue;
+    font-family: Arial, sans-serif;      /* семейство шрифтов*/
+    font-size: 2.5em;                    /* размер шрифта*/
+    font-weight: 900;                     /* вес  шрифта*/
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+ul {
+    font-size: 1.1em;
+    font-weight: 600;
+}
