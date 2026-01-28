@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .reviews-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                align-items: flex-start;
+                /*align-items: stretch; */
+            }
+
+            .review-card {
+                flex-basis: 250px;
+                flex-grow: 1;
+                flex-shrink: 1;                
+                /* flex: 1 1 250px; /* ← это корректно: grow=1, shrink=1, basis=250px */
+                                 /* + стили оформления */
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                padding: 16px;                     
+            }      
+            
+        </style>
+    </head>
+    <body>
+        <div class="reviews-container">
+            <div class="review-card">
+            <h2>Анна</h2>
+            <p>Замечательная работа! Цвета очень живые.</p>
+            <p>★★★★★</p>
+            <p>20 января 2026</p>
+            </div>
+            <div class="review-card">
+            <h2>Анастасия</h2>
+            <p>Замечательная работа! Цвета очень живые.</p>
+            <p>★★★★★</p>
+            <p>24 января 2026</p>
+            </div>
+            <div class="review-card">
+            <h2>Егор</h2>
+            <p>Замечательная работа! Цвета очень живые.</p>
+            <p>★★★★★</p>
+            <p>23 января 2026</p>
+            </div>            
+        </div>       
+    </body>
+    </html>

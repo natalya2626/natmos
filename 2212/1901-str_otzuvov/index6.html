@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Упражнения и отзывы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f5f0;
+            padding: 20px;
+            color: #333;
+        }
+        .exercise-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .exercise-item {
+            flex: 1 1 280px;
+            max-width: 380px;
+        }
+        .service-card,
+        .review-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .service-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 16px;
+            background-color: #f0f0f0;
+        }
+        .review-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+        .service-card h3,
+        .review-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            color: #2c1e1e;
+        }
+        .service-card p,
+        .review-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .price {
+            font-weight: bold;
+            color: #8b0000;
+            font-size: 1.2rem;
+            margin-top: 8px;
+        }
+        .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        .rating {
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="exercise-section">
+
+        <!-- Упражнение 1 + отзыв -->
+        <div class="exercise-item">
+            <div class="service-card">
+                <img src="tu-0.jpg" alt="Конфронтирование">
+                <h3>«Конфронтирование»</h3>
+                <p>Конфронтирование определяется как способность быть лицом к лицу с чем-либо или с кем-либо. Когда мы говорим, что человек конфронтирует, мы подразумеваем, что он находится лицом к лицу, не избегая и не уклоняясь.</p>
+                <div class="price">990 ₽</div>
+            </div>
+            <div class="review-card">
+                <img src="client1.jpg" alt="Анна">
+                <h3>Анна</h3>
+                <div class="date">20 января 2026</div>
+                <p>Упражнение «Конфронтирование» помогло мне перестать бояться конфликтов. Теперь я могу спокойно говорить о том, что меня беспокоит.</p>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+
+        <!-- Упражнение 2 + отзыв (Травля быка) -->
+        <div class="exercise-item">
+            <div class="service-card">
+                <img src="tu-0.jpg" alt="Травля быка">
+                <h3>«Травля быка»</h3>
+                <p>Выражение «травить быка» означает отыскивать определенные действия, слова, фразы, манеры или темы, которые заставили бы студента, выполняющего упражнение, среагировать на действия тренера.</p>
+                <div class="price">990 ₽</div>
+            </div>
+            <div class="review-card">
+                <img src="client3.jpg" alt="Анастасия">
+                <h3>Анастасия</h3>
+                <div class="date">24 января 2026</div>
+                <p>«Травля быка» было непросто, но очень revealing. Узнала свои слабые места и теперь работаю над ними.</p>
+                <div class="rating">★★★★☆</div>
+            </div>
+        </div>
+
+        <!-- Упражнение 3 + отзыв -->
+        <div class="exercise-item">
+            <div class="service-card">
+                <img src="tu-0.jpg" alt="Донести сообщение">
+                <h3>«Донести ваше сообщение»</h3>
+                <p>Цель: Приобрести навык доносить одно конкретное сообщение до слушателя и делать так, чтобы он его понял. Важная часть формулы общения — сделать так, чтобы вас поняли.</p>
+                <div class="price">990 ₽</div>
+            </div>
+            <div class="review-card">
+                <img src="client2.jpg" alt="Егор">
+                <h3>Егор</h3>
+                <div class="date">23 января 2026</div>
+                <p>«Донести ваше сообщение» — простое, но мощное упражнение. Я стал гораздо яснее выражать мысли на работе.</p>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

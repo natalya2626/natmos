@@ -24,14 +24,14 @@ body {
 
 .images {
     display: flex;            /* дисплей флекс */
-    font-size: 0;
+    font-size: 0;             /* размер шрифта*/
     text-align: center;
     justify-content: space-around;  /* обосновать содержание */
     min-height: 90vh;               /* мин высота */ 
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {       /* адаптивная верстка */ 
     .images div {
         display: block;
         margin: 0 auto;
