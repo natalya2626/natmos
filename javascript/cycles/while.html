@@ -1,0 +1,32 @@
+<!-- <script>
+    let a = 1;
+    while (a < 10) {
+        document.write(a);
+        a++;
+    } 
+</script> -->
+<script>
+  "use strict";
+    //сообщить условия игры
+ alert("<strong>Угадай число от 1 до 100</strong><br>");
+ 
+ // загадать случайное число в диапазоне от 1 до 100 включительно   
+ const numberToGuess = 1 + Math.floor(Math.random() * 10);
+ let guess;
+ // начиная  отсюда, повторяй
+do {
+    // Пользователь вводит число 
+    guess = +prompt("Введите число:");
+        
+    if (numberToGuess > guess) {
+        alert("Загаданное больше<br>");
+    } else if (numberToGuess < guess) {
+        alert("Загаданное меньше<br>");
+    } 
+    
+    if (numberToGuess == guess) {
+      alert("Вы выиграли<br>");
+    }
+ }    
+    
+</script>
