@@ -40,7 +40,7 @@ function Task(title, description)     {
   //return task;
 }
 
-Object.assign(Task.prototype, taskProto);
+Object.setPrototypeOf(Task.prototype, taskProto);
 
 
 const task2 = new Task("Go out", "To walk away");
@@ -48,3 +48,4 @@ const task2 = new Task("Go out", "To walk away");
 task2.log();
 task2.complete();
 task2.log();
+
